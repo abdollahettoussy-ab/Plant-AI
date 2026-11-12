@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" role="img" aria-label="PlanIT AI">
+  <defs>
+    <linearGradient id="txt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="it" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22a7ff"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="swoosh" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a855f7"/>
+      <stop offset="0.5" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- orbite principale -->
+  <path d="M92 236 C 232 270, 472 236, 562 112 C 482 210, 262 236, 92 236 Z" fill="url(#swoosh)"/>
+  <!-- arc fin au-dessus -->
+  <path d="M318 108 C 395 76, 480 76, 548 104" fill="none" stroke="url(#swoosh)" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- étincelle -->
+  <path d="M566 62 L573 84 L595 91 L573 98 L566 120 L559 98 L537 91 L559 84 Z" fill="url(#spark)"/>
+
+  <!-- points décoratifs -->
+  <circle cx="58" cy="206" r="5" fill="#22d3ee"/>
+  <circle cx="86" cy="236" r="4" fill="#a855f7"/>
+  <circle cx="612" cy="100" r="3.5" fill="#a855f7"/>
+
+  <!-- texte -->
+  <text x="330" y="180" text-anchor="middle" font-family="Poppins, Montserrat, 'Segoe UI', Arial, sans-serif" font-size="84" letter-spacing="-2">
+    <tspan font-weight="700" fill="url(#txt)">Plan</tspan><tspan font-weight="900" fill="url(#it)">IT</tspan><tspan dx="16" font-weight="300" fill="url(#txt)">AI</tspan>
+  </text>
+</svg>
