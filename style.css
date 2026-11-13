@@ -1,0 +1,25 @@
+#nom,#tec,#date,#nbr{
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 500px;
+    height: 35px;
+    
+}
+#brief{
+     border: 2px solid black;
+    border-radius: 6px;
+    position: absolute;
+    width: 1055px;
+    margin-top: 252px;
+    
+}
+#description{
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 500px;
+    
+}
+label{
+    font-size: large;
+}
+
