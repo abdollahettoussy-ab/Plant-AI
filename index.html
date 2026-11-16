@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://cdn.tailwindcss.com"></script>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="style.css">
 
    <title>planit-AI</title>
 </head>
@@ -43,7 +44,8 @@
                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
                         </svg>
-                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap text-white">New Project</span>
+                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap text-white">New
+                           Project</span>
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                            height="24" fill="none" viewBox="0 0 24 24">
                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -54,9 +56,9 @@
                   </ul>
                </li>
                <li>
-                 
-                    <button
-                    class="flex-1 ms-3 whitespace-nowrap text-white" id ='Parametre'><i class="fa-solid fa-star-of-life"></i>Paramétre IA</button>
+
+                  <button class="flex-1 ms-3 whitespace-nowrap text-white" id='Parametre'><i
+                        class="fa-solid fa-star-of-life"></i>Paramétre IA</button>
                   </a>
                </li>
 
@@ -64,29 +66,41 @@
          </div>
       </aside>
    </header>
+
    <main class="ml-[210px]">
+    
       <dialog id="modal" class="w-[420px] h-[200px] rounded-xl border border-blue-800 px-[10px]">
          <h1 class="text-2xl ">Parametre IA</h1>
          <p class="text-xl">Clé API Gemini / Open AI</p>
          <h2 class="flex justify-center">Entrer votre API</h2>
-         <input type="password" min="10" max="100" name="API" id="api" class="w-[400px] h-[50px] rounded-md py-[10px] border border-violet-700">
+         <input type="password" min="10" max="100" name="API" id="api"
+            class="w-[400px] h-[50px] rounded-md py-[10px] border border-violet-700">
          <div class="flex justify-between py-[15px] text-white text-xl">
-         <button class="border border-blue-800 rounded-md bg-violet-700 w-[80px] h-[30px]">Cancel</button>
-         <button class="border border-blue-800 rounded-md bg-violet-700 w-[80px] h-[30px]">Entrer</button>
-         </div> 
+            <button id="closeBtn" type="button"
+               class="border border-blue-800 rounded-md bg-violet-700 w-[80px] h-[30px]">Cancel</button>
+            <button class="border border-blue-800 rounded-md bg-violet-700 w-[160px] h-[30px]"">Utilise le Modale</button>
+
+         <button class=" border border-blue-800 rounded-md bg-violet-700 w-[80px] h-[30px]">Entrer</button>
+         </div>
       </dialog>
-      <div class="flex justify-between py-[50px] px-[50px] " >
+      <div class="flex justify-between py-[50px] px-[50px] ">
          <div>
             <h1 class="text-5xl">Mes projets</h1>
             <p class="text-2xl">Gérez vous projets suivvez leur avancement</p>
          </div>
-        <a href="nouveau.html"><button class="border bg-violet-700 w-[190px] h-[60px] rounded-xl text-xl text-white"><i class="bi bi-plus-lg"></i> Nouveau projet</button></a>
+         <a href="nouveau.html"><button class="border bg-violet-700 w-[190px] h-[60px] rounded-xl text-xl text-white"><i
+                  class="bi bi-plus-lg"></i> Nouveau projet</button></a>
+      </div>
+        <div id="principale" class="flex items-center  w-[80%] h-[550px] gap-[10px] p-[20px] rounded-2xl">
+         <div id="to-do" class="w-[30%] border bordr border-blue-400 h-[500px] text-center"><p class="border border-blue-400 rounded-2xl py-[5px] ">To do</p></div>
+         <div id="progtress" class="w-[30%] border bordr border-blue-400 h-[500px] text-center"><p class="border border-blue-400 rounded-2xl py-[5px]">In progress</p></progress></div>
+         <div id="done" class="w-[30%] border bordr border-blue-400 h-[500px] text-center"><p class="border border-blue-400 rounded-2xl py-[5px]">Done</p></div>
       </div>
 
 
    </main>
 
 </body>
-<script src="modal.js" defer></script>
+<script src="js/modal.js" defer></script>
 
 </html>
