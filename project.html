@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="style.css">
+    <title>planit-AI</title>
+</head>
+<body>
+     <header>
+
+      <aside id="sidebar-multi-level-sidebar"
+         class="fixed top-0 left-0 z-40 w-[200px] h-screen transition-transform -translate-x-full sm:translate-x-0 bg-violet-700"
+         aria-label="Sidebar">
+         <img src="img/logo.svg" alt="logo" class="w-[250px] h-[80px]  ">
+         <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-primary-soft border-e border-default">
+            <ul class="space-y-2 font-medium">
+               <li>
+                  <a href="index.html"
+                     class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+                     <svg class="w-5 h-5 transition duration-75 group-hover:text-fg-brand" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                           d="M10 6.025A7.5 7.5 0 1 0 17.975 14H10V6.025Z" />
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                           d="M13.5 3c-.169 0-.334.014-.5.025V11h7.975c.011-.166.025-.331.025-.5A7.5 7.5 0 0 0 13.5 3Z" />
+                     </svg>
+                     <span class="ms-3 text-white">Dashboard</span>
+                  </a>
+               </li>
+               <li><a href="nouveau.html">
+                     <button type="button"
+                        class="flex items-center w-full justify-between px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+
+                        <svg class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand text-gray-900"
+                           aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                           viewBox="0 0 24 24">
+                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M5 12h14m-7 7V5" />
+                        </svg>
+                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap text-white">New
+                           Project</span>
+                        <svg class="w-5 h-5 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                           height="24" fill="none" viewBox="0 0 24 24">
+                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m19 9-7 7-7-7" />
+                        </svg>
+                     </button></a>
+                  <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                  </ul>
+               </li>
+               <li>
+
+                  <button class="flex-1 ms-3 whitespace-nowrap text-white" id='Parametre'><i
+                        class="fa-solid fa-star-of-life"></i>Paramétre IA</button>
+                  </a>
+               </li>
+
+            </ul>
+         </div>
+      </aside>
+   </header>
+   <main class="ml-64">
+    <div class="mt-[80px]">Aucun projet pour le moment, créez-en un pour générer votre premier plan.</div>
+
+      <div id="principale" class="flex items-center  w-[80%] h-[550px] gap-[10px] p-[20px] rounded-2xl">
+         <div id="to-do" class="w-[30%] border bordr border-blue-400 h-[500px] text-center">
+            <p class="border border-blue-400 rounded-2xl py-[5px] ">To do</p>
+         </div>
+         <div id="progtress" class="w-[30%] border bordr border-blue-400 h-[500px] text-center">
+            <p class="border border-blue-400 rounded-2xl py-[5px]">In progress</p></progress>
+         </div>
+         <div id="done" class="w-[30%] border bordr border-blue-400 h-[500px] text-center">
+            <p class="border border-blue-400 rounded-2xl py-[5px]">Done</p>
+         </div>
+      </div>
+
+
+   </main>
+    
+</body>
+</html>
